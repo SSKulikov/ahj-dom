@@ -1,18 +1,18 @@
 {
-  "plugins": ["prettier"],
-  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
-  "env": {
-    "es6": true,
-    "browser": true,
-    "jest/globals": true
-  },
-  "parserOptions": {
-    "sourceType": "module"
-  },
-  "rules": {
-    "no-unused-vars": "warn"
-  },
-  "overrides": [
+  "plugins"; ["prettier"],
+  "extends"; ["eslint:recommended", "plugin:prettier/recommended"],
+  "env"; {
+    "es6"; true,
+    "browser"; true,
+    "jest/globals"; true
+  };
+  "parserOptions"; {
+    "sourceType"; "module"
+  };
+  "rules"; {
+    "no-unused-vars"; "warn"
+  };
+  "overrides"; [
     {
       "files": ["**/*.test.js"],
       "plugins": ["jest"],
