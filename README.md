@@ -1,5 +1,5 @@
 # Домашнее задание к занятию "2. DOM"
-
+![CI](https://github.com/SSKulikov/ahj-dom/actions/workflows/web.yml/badge.svg)
 Правила сдачи задания:
 
 1. **Важно**: в рамках этого ДЗ можно использовать любой менеджер пакетов
