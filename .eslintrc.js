@@ -1,15 +1,23 @@
-module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-    node: true,
-    jest: true,
+{
+  "plugins": ["prettier"],
+  "extends": ["eslint:recommended", "plugin:prettier/recommended"],
+  "env": {
+    "es6": true,
+    "browser": true,
+    "jest/globals": true
   },
-  extends: 'airbnb-base',
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+  "parserOptions": {
+    "sourceType": "module"
   },
-  rules: {
+  "rules": {
+    "no-unused-vars": "warn"
   },
-};
+  "overrides": [
+    {
+      "files": ["**/*.test.js"],
+      "plugins": ["jest"],
+      "extends": ["plugin:jest/recommended"],
+      "rules": { "jest/prefer-expect-assertions": "off" }
+    }
+  ]
+}
